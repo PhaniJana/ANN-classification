@@ -8,7 +8,7 @@ import pickle
 
 # Load the trained model
 #Load the model
-model=load_model('model.h5',compile=False)
+model=load_model('model.keras')
 
 #Load Encoder and Scaler
 with open('label_encoder.pkl','rb') as file:
@@ -76,5 +76,6 @@ if prediction_proba > 0.5:
     st.write('The customer is likely to churn.')
 else:
     st.write('The customer is not likely to churn.')
+
 
 
