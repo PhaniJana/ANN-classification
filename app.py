@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
@@ -77,3 +76,4 @@ if prediction_proba > 0.5:
     st.write('The customer is likely to churn.')
 else:
     st.write('The customer is not likely to churn.')
+
